@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #2d3248;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #b18caf;
+}
+body .bg {
+  width: 20rem;
+  z-index: -1;
+}
+body .absolute3 {
+  position: absolute;
+  top: -10vh;
+  left: -10vw;
+}
+body .absolute4 {
+  position: absolute;
+  bottom: -10vh;
+  right: -10vw;
+}
+body .parent {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: max-content;
+  height: fit-content;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+body .parent .relative {
+  position: relative;
+}
+body .parent .relative .absolute {
+  position: absolute;
+  bottom: -0.5vh;
+  left: 31%;
+  width: 7rem;
+  height: 7rem;
+}
+body .parent .relative #whitecircle {
+  border-radius: 50%;
+  background-color: #fff;
+}
+body .parent .relative .absolute2 {
+  position: absolute;
+  bottom: 1.2vh;
+  left: 33%;
+  border-radius: 50%;
+  width: 6rem;
+}
+body .parent .relative .border-imagee {
+  border-radius: 0.5rem 0.5rem 0 0;
+  max-width: 40vw;
+}
+body .parent #data hgroup h1 {
+  display: inline-block;
+  font-weight: 700;
+}
+body .parent #data hgroup h2 {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #6a6f81;
+  font-weight: 400;
+}
+body .parent #data hgroup h3 {
+  color: #6a6f81;
+  font-weight: 400;
+}
+body .parent #data #info {
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+body .parent #data #info h4 {
+  color: #6a6f81;
+  text-align: center;
+  font-weight: 400;
+  padding: 1rem;
+}
+body .parent #data #info h4 span {
+  color: #2d3248;
+  display: block;
+  font-weight: 800;
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 650px) {
+  body .mobile {
+    width: 30%;
+  }
+  body .parent .border-imagee {
+    min-width: 60vw;
+    max-width: 90vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .parent {
+    background-image: url(../img/cool-background.png);
+    background-size: contain;
+    background-position: center;
+  }
+  .parent .border-imagee {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
