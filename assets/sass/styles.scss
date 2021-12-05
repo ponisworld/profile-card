@@ -10,6 +10,8 @@ body {
     justify-content:center;
     height:100vh;
     background-color: hsl(303, 19%, 62%);
+    overflow:hidden;
+    width: 100vw;
     .bg {
         width:20rem;
         z-index:-1;
